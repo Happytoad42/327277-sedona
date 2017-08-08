@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Михайлов](https://up.htmlacademy.ru/htmlcss/18/user/327277).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
