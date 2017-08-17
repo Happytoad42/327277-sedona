@@ -5,6 +5,9 @@
     <title>City of Sedona</title>
   </head>
   <body>
+
+    <!--Хедер !-->
+
     <header class="main-header">
       <nav class="main-navigation">
         <a href="#" class="header-logo">
@@ -18,14 +21,15 @@
         </ul>
       </nav>
     </header>
+
+    <!--Основное содержимое!-->
+
     <main class="container">
-      <h1 class="visually-hidden">Седона, штат Аризона</h1>
         <p>
           <img src="#" width="" height="" alt="Добро пожаловать в Седону!">
         </p>
         <section class="main-features">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <h3>Седона - небольшой городок в Аризоне, заслушивающий большего!</h3>
+          <h2>Седона - небольшой городок в Аризоне, заслушивающий большего!</h3>
           <p>Рассмотрим пять причин, почему Седона круче, чем Гранд Каньон!</p>
           <div class="feature-item-big">
             <img src="features-photo-1.jpg" width="" height="" alt="Улочка города Седона">
@@ -33,6 +37,8 @@
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
+
+          <!-- Список рекомендаций для туристов!-->
           <ul class="features-list-1">
             <li>
               <img src="features-picture-1.jpg" width="" height="" alt="Жилье">
@@ -50,6 +56,7 @@
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
+
           <div class="feature-item-big">
             <img src="features-photo-2.jpg" width="" height="" alt="Мост дьявола">
             <b>Там есть мост Дьявола</b>
@@ -74,6 +81,9 @@
             </li>
           </ul>
         </section>
+
+        <!-- Интерфейс поиска и бронирования гостиницы !-->
+
         <section class="booking">
           <h2 class="visually-hidden">Поиск и бронирование гостиницы</h2>
           <p>Заинтересовались?</p>
@@ -81,34 +91,35 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <p>Большая и красивая карта</p>
           <section class="main-booking">
-            <h3 class="visually-hidden">Бронирование гостиницы</h3>
             <header class="booking-header">
-              <p>Поиск гостиницы в Седоне</p>
+              <h3>Поиск гостиницы в Седоне</h3>
             </header>
+
+            <!--Форма бронирования!-->
+
             <form class="booking-form" method="post" action="">
               <div class="booking-form-item">
-                <p>Дата заезда:</p>
-                <input class="date-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+                <label>Дата заезда:<input class="date-arrival" type="text" name="arrival" placeholder="24 апреля 2017"></label>
               </div>
               <div class="booking-form-item">
-                <p>Дата выезда:</p>
-                <input class="date-departure" type="text" name="departure" placeholder="4 июля 2017">
+                <label>Дата выезда:<input class="date-departure" type="text" name="departure" placeholder="4 июля 2017"></label>
               </div>
               <div class="booking-form-counter">
-                <p>Взрослые:</p>
-                <input class="count-adults" type="number" name="adults" placeholder="2">
+                <label>Взрослые:<input class="count-adults" type="number" name="adults" placeholder="2"></label>
               </div>
               <div class="booking-form-counter">
-                <p>Дети:</p>
-                <input class="count-kids" type="number" name="kids" placeholder="0">
+                <label>Дети:<input class="count-kids" type="number" name="kids" placeholder="0"></label>
               </div>
               <button class="button" type="submit">Найти</button>
           </section>
     </main>
+
+    <!-- Футер !-->
+
     <footer class="main-footer">
       <p>#visitsedona</p>
       <section class="footer-social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <ul>
           <li><a class="social-button button-tw" href="#">Твиттер</a></li>
           <li><a class="social-button button-fb" href="#">Фейсбук</a></li>
@@ -116,7 +127,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
-        <h2 class="visually-hidden">Разработчик сайта</h2>
+        <h3 class="visually-hidden">Разработчик сайта</h3>
         <a class="dev=logo" href="https://htmlacademy.ru">
           <img  src="#" width="" height="" alt="Логотип htmlacademy">
         </a>
