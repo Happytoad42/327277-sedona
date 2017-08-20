@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="#" class="header-logo">
-          <img src="#" width="" height="" alt="Логотип официального сайта города Седона">
+          <img src="#" width="100" height="50" alt="Логотип официального сайта города Седона">
         </a>
         <ul>
           <li><a href="info.html">Информация</a></li>
@@ -30,7 +30,7 @@
     <section class="hotels-booking">
       <h2>Фильтр гостиниц</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fileldset>
+        <fieldset>
           <legend>Инфраструктура</legend>
           <ul>
             <li class="filter-option">Бассейн
@@ -57,8 +57,12 @@
 
         <fieldset>
           <legend>Стоимость в сутки (Р)</legend>
-          <p>От<output name="min-output"/></p>
-          <p>До<output name="max-output"/></p>
+          <p>От
+            <output name="min-output"></output>
+          </p>
+          <p>До
+            <output name="max-output"></output>
+          </p>
           <input class="price=range" type="range" min="0" max="4000" value="3000" name="price-range"/>
           <button type="submit">Показать</button>
         </fieldset>
@@ -69,9 +73,9 @@
 <!-- Сортировка резутатов поиска !-->
 
     <section class="search-sort">
-      <h3 class="visually-hidden">Сортировка результатов поиска</h2>
+      <h3 class="visually-hidden">Сортировка результатов поиска</h3>
       <b>Найдено:</b>
-      <output name="results-count"/>
+      <p class="results-count"></p>
       <p>Сортировка</p>
       <ul>
         <li class="sort-option">По цене</li>
@@ -136,7 +140,7 @@
     <section class="footer-copyright">
       <h3 class="visually-hidden">Разработчик сайта</h3>
       <a class="dev=logo" href="https://htmlacademy.ru">
-        <img  src="#" width="" height="" alt="Логотип htmlacademy">
+        <img  src="#" width="100" height="50" alt="Логотип htmlacademy">
       </a>
     </section>
   </footer>
