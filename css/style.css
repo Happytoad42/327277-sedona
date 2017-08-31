@@ -1,19 +1,201 @@
 body {
-  font-family: "PTSans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: rgb(51, 51, 51);
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
 }
 
-h2 {
+.main-navigation ul {
+  list-style: none;
+}
+
+.index-nav a {
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.index-nav a:hover,
+.index-nav a:focus {
+  color: #81b3d2;
+}
+
+.index-nav a:active {
+  color: #b2b2b2;
+}
+
+.index-nav .current-page {
+  color: #766357;
+}
+
+.main-features h2 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 21px;
   color: #000000;
   line-height: 26px;
 }
 
-h3 {
-  font-weight: bold;
+.feature-item-big {
+  background-color: #81b3d2;
+}
+
+.feature-item-big b {
   font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+
+}
+
+.feature-item p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.features-list-1 {
+  list-style: none;
+}
+
+.features-list-1 b,
+.features-list-2 b {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+
+.features-list-1 p,
+.features-list-2 p {
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color: #333333;
+}
+
+.index-column {
+  background-color: #eeeeee;
+}
+
+.booking strong {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.booking-header {
+  background-color: #766357;
+}
+
+
+.booking-header h3 {
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+color: #ffffff;
+}
+
+.booking-header a {
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+
+  background-color: #766357;
+}
+
+.booking-header a:hover,
+.booking-header a:focus {
+  background-color: #604e43;
+}
+
+.booking-header a:active {
+  opacity: 0,5;
+  background-color: #503e33;
+}
+
+.booking-form {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="numer"] {
+  font: inherit;
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+.booking-form input:hover,
+ {
+  background-color: #f2f2f2;
+}
+
+.booking-form input:focus,
+.booking-form input:active {
+  background-color: #ffffff;
+  box-shadow:2px 2px 0 0 #f2f2f2 inset;
+}
+
+.booking-form .button {
+  text-align: center;
+
+  font-style: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.booking-form .button:hover {
+  background-color: #669ec0;
+}
+
+.booking-form .button:focus,
+.booking-form .button:active {
+  background-color: #5496bd;
+  opacity: 0,5;
+}
+.main-footer p {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #81b3d2;
+}
+
+.footer-copyright h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
   color: #000000;
 }

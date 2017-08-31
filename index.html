@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>City of Sedona</title>
   </head>
   <body>
@@ -14,7 +16,7 @@
         <a href="index.html" class="header-logo">
           <img src="img/main-logo.png" width="138" height="70" alt="Логотип официального сайта города Седона">
         </a>
-        <ul>
+        <ul class="index-nav">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
@@ -64,6 +66,7 @@
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
+          <div class="index-column">
           <ul class="features-list-2">
             <li class="features-item-small">
               <b>Небольшая площадь</b>
@@ -81,19 +84,22 @@
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
+          </div>
         </section>
 
         <!-- Интерфейс поиска и бронирования гостиницы !-->
 
         <section class="booking">
           <h2 class="visually-hidden">Поиск и бронирование гостиницы</h2>
-          <p>Заинтересовались?</p>
+          <strong>Заинтересовались?</strong>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <img class="map-placeholder" src="img/map.jpg" width="1200" height="593" alt="Как к нам проехать"/>
           <section class="main-booking">
             <header class="booking-header">
-              <h3>Поиск гостиницы в Седоне</h3>
+              <h3>
+                <a href="booking-link">Поиск гостиницы в Седоне</a>
+              </h3>
             </header>
 
             <!-- Форма бронирования !-->
