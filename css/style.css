@@ -20,6 +20,8 @@ body {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+
+  text-decoration: none;
 }
 
 .index-nav a:hover,
@@ -98,15 +100,7 @@ color: #333333;
 }
 
 .booking-header {
-  background-color: #766357;
-}
 
-
-.booking-header h3 {
-font-size: 21px;
-line-height: 26px;
-font-weight: 700;
-color: #ffffff;
 }
 
 .booking-header a {
@@ -114,6 +108,7 @@ color: #ffffff;
   line-height: 26px;
   color: #ffffff;
   font-weight: 700;
+  text-decoration: none;
 
   background-color: #766357;
 }
