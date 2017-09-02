@@ -16,7 +16,7 @@
         <a href="index.html" class="header-logo">
           <img src="img/main-logo.png" width="138" height="70" alt="Логотип официального сайта города Седона">
         </a>
-        <ul>
+        <ul class="index-nav">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
@@ -59,14 +59,12 @@
 
         <fieldset>
           <legend>Стоимость в сутки (Р)</legend>
-          <p>От
-            <output name="min-output"></output>
-          </p>
-          <p>До
-            <output name="max-output"></output>
-          </p>
-          <input class="price=range" type="range" min="0" max="4000" value="3000" name="price-range"/>
-          <button type="submit">Показать</button>
+          <div class="range-output">
+            <div class="range-min">От 0</div>
+            <div class="range-max">До 3000</div>
+          </div>
+          <input class="price-range" type="range" min="0" max="4000" value="3000" name="price-range"/>
+          <button class="show-results" type="submit">Показать</button>
         </fieldset>
 
       </form>
@@ -76,11 +74,10 @@
 
     <section class="search-sort">
       <h3 class="visually-hidden">Сортировка результатов поиска</h3>
-      <b>Найдено:</b>
-      <p class="results-count"></p>
-      <p>Сортировка</p>
+      <b>Найдено:<b class="results-count">3</b></b>
+      <p>Сортировка:</p>
       <ul>
-        <li class="sort-option">По цене</li>
+        <li class="sort-option current-option">По цене</li>
         <li class="sort-option"><a href="#">По типу</a></li>
         <li class="sort-option"><a href="#">По рейтингу</a></li>
       </ul>
@@ -94,30 +91,30 @@
       <h3 class="visually-hidden">Результаты поиска гостиницы</h3>
       <ul>
         <li class="search-results-item">
-          <b class="hotel-name">Amara Resort & SPA</b>
-          <img class="hotel-photo" src="img/hotel-photo-1.jpg" width="135" height="90" alt="Amara Resort & SPA"/>
-          <p class="hotel-type">Гостиница</p>
-          <p class="hotel-price">от 4000 Р.</p>
+          <b>Amara Resort & SPA</b>
+          <img class="hotel-photo" src="img/list-item-1.jpg" width="135" height="90" alt="Amara Resort & SPA"/>
+          <p>Гостиница</p>
+          <p>от 4000 Р.</p>
           <img class="hotel-stars 4stars" src="img/hotel-4star.jpg" width="100" height="20" alt="4 звезды"/>
           <p class="hotel-rating">Рейтинг: 8,5</p>
           <a href="#" class="button button-more">Подробнее</a>
           <a href="#" class="button button-book">Забронировать</a>
         </li>
         <li class="search-results-item">
-          <b class="hotel-name">Desert Quail Inn</b>
-          <img class="hotel-photo" src="img/hotel-photo-2.jpg" width="135" height="90" alt="Desert Quail Inn"/>
-          <p class="hotel-type">Мотель</p>
-          <p class="hotel-price">от 3000 Р.</p>
+          <b>Desert Quail Inn</b>
+          <img class="hotel-photo" src="img/list-item-2.jpg" width="135" height="90" alt="Desert Quail Inn"/>
+          <p>Мотель</p>
+          <p>от 3000 Р.</p>
           <img class="hotel-stars 3stars" src="img/hotel-3star.jpg" width="100" height="20" alt="3 звезды"/>
           <p class="hotel-rating">Рейтинг: 8,9</p>
           <a href="#" class="button button-more">Подробнее</a>
           <a href="#" class="button button-book">Забронировать</a>
         </li>
         <li class="search-results-item">
-          <b class="hotel-name">Villas at Poco Diablo</b>
-          <img class="hotel-photo" src="img/hotel-photo-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
-          <p class="hotel-type">Апартаменты</p>
-          <p class="hotel-price">от 2000 Р.</p>
+          <b>Villas at Poco Diablo</b>
+          <img class="hotel-photo" src="img/list-item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
+          <p>Апартаменты</p>
+          <p>от 2000 Р.</p>
           <img class="hotel-stars 2stars" src="img/hotel-2star.jpg" width="100" height="20" alt="2 звезды"/>
           <p class="hotel-rating">Рейтинг: 9,2</p>
           <a href="#" class="button button-more">Подробнее</a>
