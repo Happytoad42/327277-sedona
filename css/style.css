@@ -227,10 +227,11 @@ color: #333333;
 }
 
 .hotels-booking {
-  background-image: url("img/bg-blurred.jpg");
+  background-image: url("../img/bg-blurred.jpg");
   background-color: #4c565e;
   background-position: top;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .range-output .range-min,
@@ -372,6 +373,7 @@ color: #333333;
 }
 
 .wrapper {
+  position: relative;
   margin-right: auto;
   margin-left:  auto;
 
@@ -388,7 +390,6 @@ color: #333333;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid green;
 
   z-index: 5;
 
@@ -428,7 +429,6 @@ color: #333333;
 
 }
 
-
 .feature-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -437,7 +437,6 @@ color: #333333;
 
   margin-top: -192px;
   min-height: 170px;
-  outline: 1px solid red;
 }
 
 .feature-text-wrapper h2 {
@@ -487,9 +486,6 @@ color: #333333;
   min-height: 330px;
 }
 
-.features-list-1 {
-
-}
 
 .features-list-1 li,
 .features-list-2 li {
@@ -520,10 +516,19 @@ color: #333333;
 }
 
 .main-footer {
+
+
   display: flex;
   justify-content: space-between;
   min-height: 120px;
 
+  background-color: #ffffff;
+}
+
+.index {
+  position: absolute;
+  left: 40px;
+  top: 2643px;
 }
 
 .main-footer p {
@@ -546,4 +551,78 @@ color: #333333;
 
 .footer-copyright {
   width: 400px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+
+  min-height: 220px;
+}
+
+.form-column {
+  width: 250px;
+  min-height: 220px;
+}
+
+.price {
+  width: 400px;
+  margin-left: auto;
+
+  min-height: 220px;
+}
+
+.search-sort {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  min-height: 86px;
+
+  background-color: #ffffff;
+}
+
+.search-column {
+  width: 225px;
+  }
+
+.search-sort p {
+  width: 130px;
+  text-align: center;
+}
+
+.search-sort ul {
+  display: flex;
+  align-items: baseline;
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  width: 375px;
+}
+
+.search-arrows {
+  width: 35px;
+
+  margin-right: 73px;
+  margin-left: auto;
+}
+
+.search-results ul {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 454px;
+  background-color: #ffffff;
+}
+
+.search-results-item {
+  min-height: 152px;
 }

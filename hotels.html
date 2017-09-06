@@ -8,19 +8,20 @@
     <title>Забронировать гостиницу</title>
   </head>
   <body class="inner-page">
+  <div class="wrapper">
 
     <!--Хедер -->
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="header-logo">
+        <div class=header-logo><a href="index.html" class="header-logo">
           <img src="img/main-logo.png" width="138" height="70" alt="Логотип официального сайта города Седона">
-        </a>
+        </div>
         <ul class="index-nav">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
-          <li><a class="current-page" href="hotels.html">Гостиницы</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -30,8 +31,9 @@
 
     <main class="container">
     <section class="hotels-booking">
-      <h2>Фильтр гостиниц</h2>
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <div class="form-column">
         <fieldset>
           <legend>Инфраструктура</legend>
           <ul>
@@ -43,6 +45,8 @@
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi"></li>
           </ul>
         </fieldset>
+        </div>
+        <div class="form-column">
         <fieldset>
           <legend>Тип жилья</legend>
           <ul>
@@ -54,9 +58,11 @@
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartements" checked></li>
           </ul>
         </fieldset>
+        </div>
 
 <!-- Ползунок стоимости -->
 
+        <div class="form-column price">
         <fieldset>
           <legend>Стоимость в сутки (Р)</legend>
           <div class="range-output">
@@ -66,7 +72,7 @@
           <input class="price-range" type="range" min="0" max="4000" value="3000" name="price-range"/>
           <button class="show-results" type="submit">Показать</button>
         </fieldset>
-
+        </div>
       </form>
     </section>
 
@@ -74,15 +80,19 @@
 
     <section class="search-sort">
       <h3 class="visually-hidden">Сортировка результатов поиска</h3>
+      <div class="search-column">
       <b>Найдено:<b class="results-count">3</b></b>
+      </div>
       <p>Сортировка:</p>
       <ul>
         <li class="sort-option current-option">По цене</li>
         <li class="sort-option"><a href="#">По типу</a></li>
         <li class="sort-option"><a href="#">По рейтингу</a></li>
       </ul>
-      <a class="sort-results sort-up" href="#"></a>
-      <a class="sort-results sort-down" href="#"></a>
+      <div class="search-arrows">
+        <a class="sort-results sort-up" href="#"></a>
+        <a class="sort-results sort-down" href="#"></a>
+      </div>
     </section>
 
 <!-- Результаты поиска по гостиницам -->
@@ -143,5 +153,6 @@
       </a>
     </section>
   </footer>
+</div>
 </body>
 </html>
