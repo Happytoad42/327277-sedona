@@ -159,16 +159,20 @@
       <form class="booking-form" method="post" action="/echo">
         <div class="form-wrapper">
           <p class="booking-form-item">
-            <label>Дата заезда:<input class="date-arrival" type="text" name="arrival" placeholder="24 апреля 2017"></label>
+            <label for="arrival">Дата заезда:</label>
+            <input class="date-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
           </p>
           <p class="booking-form-item">
-            <label>Дата выезда:<input class="date-departure" type="text" name="departure" placeholder="4 июля 2017"></label>
-          </pattern="">
+            <label for="departure">Дата выезда:</label>
+            <input class="date-departure" type="text" name="departure" placeholder="4 июля 2017">
+          </p>
           <p class="booking-form-counter">
-            <label>Взрослые:<input class="count-adults" type="number" name="adults" placeholder="2"></label>
-          </pattern="">
+            <label for="adults">Взрослые:</label>
+              <input class="count-adults" type="number" name="adults" placeholder="2">
+          </p>
           <p class="booking-form-counter">
-            <label>Дети:<input class="count-kids" type="number" name="kids" placeholder="0"></label>
+            <label for="kids">Дети:</label>
+              <input class="count-kids" type="number" name="kids" placeholder="0">
           </p>
         </div>
         <button class="button btn-find" type="submit">Найти</button>

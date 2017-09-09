@@ -35,27 +35,39 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <div class="form-column">
         <fieldset>
-          <legend class="filter-option-name">Инфраструктура</legend>
+          <legend class="filter-option-name">Инфраструктура:</legend>
           <ul>
-            <li class="filter-option"><label for="filter-pool">Бассейн</label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked></li>
-            <li class="filter-option"><label for="filter-parking">Парковка</label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking"></li>
-            <li class="filter-option"><label for="filter-wifi">Wi-fi</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi"></li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+            <label for="filter-wifi">Wi-fi</label>
+            </li>
           </ul>
         </fieldset>
         </div>
         <div class="form-column">
         <fieldset>
-          <legend class="filter-option-name">Тип жилья</legend>
+          <legend class="filter-option-name">Тип жилья:</legend>
           <ul>
-            <li class="filter-option"><label for="filter-hotel">Гостиница</label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked></li>
-            <li class="filter-option"><label for="filter-motel">Мотель</label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked></li>
-            <li class="filter-option"><label for="filter-apartements">Апартаменты</label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartements" checked></li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartements" checked>
+              <label for="filter-apartements">Апартаменты</label>
+            </li>
           </ul>
         </fieldset>
         </div>
@@ -86,9 +98,7 @@
 
     <section class="search-sort">
       <h3 class="visually-hidden">Сортировка результатов поиска</h3>
-      <div class="search-column">
-      <b>Найдено:<b class="results-count">3</b></b>
-      </div>
+      <b>Найдено:<span class="results-count">3</span></b>
       <p>Сортировка:</p>
       <ul>
         <li class="sort-option current-option">По цене</li>
@@ -96,8 +106,16 @@
         <li class="sort-option"><a href="#">По рейтингу</a></li>
       </ul>
       <div class="search-arrows">
-        <a class="sort-results sort-up" href="#"></a>
-        <a class="sort-results sort-down" href="#"></a>
+        <a class="sort-up" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+          </svg>
+        </a>
+        <a class="sort-down active" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -107,34 +125,64 @@
       <h3 class="visually-hidden">Результаты поиска гостиницы</h3>
       <ul>
         <li class="search-results-item">
-          <b>Amara Resort & SPA</b>
-          <img class="hotel-photo" src="img/list-item-1.jpg" width="135" height="90" alt="Amara Resort & SPA"/>
-          <p>Гостиница</p>
-          <p>от 4000 Р.</p>
-          <img class="hotel-stars 4stars" src="img/hotel-4star.jpg" width="100" height="20" alt="4 звезды"/>
-          <p class="hotel-rating">Рейтинг: 8,5</p>
-          <a href="#" class="button button-more">Подробнее</a>
-          <a href="#" class="button button-book">Забронировать</a>
+          <div class="results-item-wrapper">
+            <img class="hotel-photo" src="img/list-item-1.jpg" width="135" height="90" alt="Amara Resort & SPA"/>
+            <div class="wrapper-info">
+              <b>Amara Resort & SPA</b>
+              <p>Гостиница</p>
+              <p>от 4000 Р.</p>
+              <a href="#" class="button button-more">Подробнее</a>
+              <a href="#" class="button button-book">Забронировать</a>
+          </div>
+          <div class="wrapper-rating">
+            <div class="stars-rating">
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+            <p class="hotel-rating">Рейтинг: 8,5</p>
+          </div>
+        </div>
         </li>
         <li class="search-results-item">
-          <b>Desert Quail Inn</b>
-          <img class="hotel-photo" src="img/list-item-2.jpg" width="135" height="90" alt="Desert Quail Inn"/>
-          <p>Мотель</p>
-          <p>от 3000 Р.</p>
-          <img class="hotel-stars 3stars" src="img/hotel-3star.jpg" width="100" height="20" alt="3 звезды"/>
-          <p class="hotel-rating">Рейтинг: 8,9</p>
-          <a href="#" class="button button-more">Подробнее</a>
-          <a href="#" class="button button-book">Забронировать</a>
+          <div class="results-item-wrapper">
+            <img class="hotel-photo" src="img/list-item-2.jpg" width="135" height="90" alt="Desert Quail Inn"/>
+            <div class="wrapper-info">
+            <b>Desert Quail Inn</b>
+            <p>Мотель</p>
+            <p>от 3000 Р.</p>
+            <a href="#" class="button button-more">Подробнее</a>
+            <a href="#" class="button button-book">Забронировать</a>
+            </div>
+            <div class="wrapper-rating">
+              <div class="stars-rating">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <p class="hotel-rating">Рейтинг: 8,9</p>
+            </div>
+        </div>
         </li>
         <li class="search-results-item">
-          <b>Villas at Poco Diablo</b>
-          <img class="hotel-photo" src="img/list-item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
-          <p>Апартаменты</p>
-          <p>от 2000 Р.</p>
-          <img class="hotel-stars 2stars" src="img/hotel-2star.jpg" width="100" height="20" alt="2 звезды"/>
-          <p class="hotel-rating">Рейтинг: 9,2</p>
-          <a href="#" class="button button-more">Подробнее</a>
-          <a href="#" class="button button-book">Забронировать</a>
+          <div class="results-item-wrapper">
+            <img class="hotel-photo" src="img/list-item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
+            <div class="wrapper-info">
+            <b>Villas at Poco Diablo</b>
+            <p>Апартаменты</p>
+            <p>от 2000 Р.</p>
+            <a href="#" class="button button-more">Подробнее</a>
+            <a href="#" class="button button-book">Забронировать</a>
+            </div>
+            <div class="wrapper-rating">
+              <div class="stars-rating">
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <p class="hotel-rating">Рейтинг: 9,2</p>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
@@ -151,7 +199,6 @@
           <a href="img/twitter.svg"><span class="visually-hidden">Твиттер</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
               <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z">
-
             </svg>
           </a>
         </li>
@@ -159,12 +206,11 @@
           <a href="img/fb-icon.svg"><span class="visually-hidden">Фейсбук</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-
             </svg>
           </a>
         </li>
         <li  class="social-button button-yt" >
-          <ahref="img/youtube.svg"><span class="visually-hidden">Youtube</span>
+          <a href="img/youtube.svg"><span class="visually-hidden">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
               <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
             </svg>
