@@ -14,7 +14,7 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <div class=header-logo><a href="index.html" class="header-logo">
+        <div class=header-logo><a href="index.html" class="header-logo"></a>
           <img src="img/main-logo.png" width="138" height="70" alt="Логотип официального сайта города Седона">
         </div>
         <ul class="index-nav">
@@ -118,8 +118,7 @@
           <li>
             <a  class="social-button button-tw" href="img/twitter.svg"><span class="visually-hidden">Твиттер</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z">
-
+                <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
               </svg>
             </a>
           </li>
@@ -166,7 +165,7 @@
               </svg>
             </a>
             <label for="arrival">Дата заезда:</label>
-            <input class="date-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+            <input class="date-arrival" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
           </p>
           <p class="booking-form-item">
             <a href="#" class="booking-calendar">
@@ -176,19 +175,19 @@
               </svg>
             </a>
             <label for="departure">Дата выезда:</label>
-            <input class="date-departure" type="text" name="departure" placeholder="4 июля 2017">
+            <input class="date-departure" type="text" name="departure" id="departure" placeholder="4 июля 2017">
           </p>
           <p class="booking-form-counter counter-adults">
             <a href="#" class="booking-btn btn-minus"> - </a>
             <a href="#" class="booking-btn btn-plus"> + </a>
             <label for="adults">Взрослые:</label>
-            <input class="count-adults" type="number" name="adults" value="2">
+            <input class="count-adults" type="number" name="adults" id="adults" value="2">
           </p>
           <p class="booking-form-counter counter-kids">
             <a href="#" class="booking-btn btn-minus"> - </a>
             <a href="#" class="booking-btn btn-plus"> + </a>
             <label for="kids">Дети:</label>
-            <input class="count-kids" type="number" name="kids" value="0">
+            <input class="count-kids" type="number" name="kids" id="kids" value="0">
           </p>
         </div>
         <button class="button btn-find" type="submit">Найти</button>
