@@ -667,7 +667,8 @@ color: #333333;
 
 .header-logo {
   position: absolute;
-  left: 572px;
+  left: 50%;
+  transform: translateX(-35px);
   z-index: 10;
 }
 
