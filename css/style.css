@@ -701,6 +701,7 @@ color: #333333;
   padding: 0 auto;
 
   margin-top: -192px;
+  height: 100px;
   min-height: 170px;
   overflow: hidden;
 }
