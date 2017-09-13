@@ -1,0 +1,1 @@
+var link=document.querySelector(".btn-booking"),booking=document.querySelector(".booking-form"),form=booking.querySelector("form"),arrival=booking.querySelector(".date-arrival"),departure=booking.querySelector(".date-departure");link.addEventListener("click",function(o){o.preventDefault(),booking.classList.toggle("booking-form-show")});

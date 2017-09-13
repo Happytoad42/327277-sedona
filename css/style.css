@@ -118,10 +118,10 @@ body {
 
 .features-list-1 p,
 .features-list-2 p {
-font-size: 14px;
-line-height: 21px;
-font-weight: 400;
-color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
 }
 
 .index-column {
@@ -231,8 +231,6 @@ color: #333333;
   background-color: #5496bd;
 }
 
-
-
 .filter ul {
   list-style: none;
 }
@@ -325,14 +323,12 @@ color: #333333;
   opacity: 0.5;
 }
 
-
 .filter-option-name {
   display: block;
   text-align: left;
 
   width: 100%;
   padding-top: 30px;
-
 }
 
 .filter-option label {
@@ -747,7 +743,7 @@ color: #333333;
 
 .feature-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -770,6 +766,7 @@ color: #333333;
 .feature-wrapper p {
   display: inline-block;
   vertical-align: center;
+
   width: 302px;
 }
 
@@ -783,12 +780,13 @@ color: #333333;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
 
   margin: 0;
   padding: 0;
   height: 100px;
   min-height: 257px;
-
 
   list-style: none;
 }
@@ -846,6 +844,8 @@ color: #333333;
 .features-list-1 li,
 .features-list-2 li {
   text-align: center;
+  position: relative;
+  z-index: 10;
 
   width: 400px;
 }
@@ -855,6 +855,8 @@ color: #333333;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 
   height: 100px;
   min-height: 291px;
@@ -866,7 +868,6 @@ color: #333333;
   text-align: center;
   padding-top: 53px;
   margin-bottom: 0px;
-
 }
 
 .booking-header p {
@@ -901,9 +902,6 @@ color: #333333;
   left: 40px;
   bottom: 0;
 }
-
-
-
 
 .filter {
   display: flex;
@@ -951,7 +949,6 @@ color: #333333;
   width: 240px;
   margin: 0;
   padding: 0;
-
 
   list-style: none;
 }
@@ -1036,25 +1033,52 @@ color: #333333;
   text-align: left;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-290px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
 
-.booking-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 2168px;
-  left: 358px;
-  width: 568px;
-  height: 395px;
-  background-color: #ffffff;
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
+
 
 .booking-form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  position: absolute;
+  position: absolute;
+  z-index: -1;
+  top: 1768px;
+  left: 358px;
+
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+
+  animation-name: "bounce";
+  animation-duration: 0.1s;
+}
+
+
+.booking-form-show {
+  z-index: 0;
+  top: 2168px;
+  left: 358px;
+
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .form-wrapper {
@@ -1240,10 +1264,7 @@ input[type="number"] .count-adults {
 .btn-plus {
   top: 0;
   left: 190px;
-
 }
-
-
 
 .btn-find {
   width: 457px;
@@ -1470,7 +1491,3 @@ input[type="number"] {
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
-/*.main-booking {
-  display: none;
-}*/
