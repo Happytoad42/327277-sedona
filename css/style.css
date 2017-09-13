@@ -725,19 +725,12 @@ body {
 
   width: 1200px;
   min-height: 256px;
+  font-size: 0;
 
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.feature-item-big img {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 66%;
-
-  font-size: 0px;
-}
 
 .reverse{
   flex-direction: row-reverse;
@@ -753,7 +746,7 @@ body {
 
   margin: 0;
   padding: 0;
-  width: 33%;
+  width: 400px;
   height: 100px;
   min-height: 256px;
 }
