@@ -734,7 +734,9 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  width: 800px;
+  width: 66%;
+
+  font-size: 0px;
 }
 
 .reverse{
@@ -751,7 +753,7 @@ body {
 
   margin: 0;
   padding: 0;
-  width: 400px;
+  width: 33%;
   height: 100px;
   min-height: 256px;
 }
@@ -1034,18 +1036,19 @@ body {
 }
 
 @keyframes bounce {
-  0% {
+    0% {
     transform: translateY(-290px);
   }
-  70% {
+
+    30% {
     transform: translateY(30px);
   }
 
-  90% {
+    70% {
     transform: translateY(-10px);
   }
 
-  100% {
+    100% {
     transform: translateY(0);
   }
 }
@@ -1066,9 +1069,6 @@ body {
   width: 568px;
   height: 395px;
   background-color: #ffffff;
-
-  animation-name: "bounce";
-  animation-duration: 0.1s;
 }
 
 
@@ -1138,7 +1138,7 @@ body {
   display: inline-block;
   vertical-align: top;
   padding-left: 5px;
-  padding-right: 22px;
+  padding-right: 19px;
   margin: 0;
 
   font-size: 14px;
@@ -1151,7 +1151,7 @@ body {
   width: 342px;
   height: 40px;
 
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .booking-form-counter {
@@ -1171,6 +1171,10 @@ body {
   padding-right: 29px;
 }
 
+.booking-form-counter label {
+  padding-right: 78px;
+}
+
 .booking-form-counter .counter-adults {
   padding-left: 13px;
   margin-left: 77px;
@@ -1178,7 +1182,7 @@ body {
 
 .counter-kids {
   margin-left: 16px;
-  padding-left: 47px;
+
 }
 
 .booking-form-counter input[type=number] {
